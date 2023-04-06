@@ -1,8 +1,22 @@
-h2{
-    text-align: center;
+h2, p{
     font-family: 'Delicious Handrawn', cursive;
 }
+
+h2{
+    font-size:40px;
+}
+
 p{
+    font-size: 25px;
+}
+
+.container{
+    width:60%;
+    margin: 0 auto;
     text-align: center;
-    font-family: 'Delicious Handrawn', cursive;
+}
+
+img{
+    height:250px;
+    width:250px;
 }

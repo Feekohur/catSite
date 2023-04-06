@@ -1,4 +1,13 @@
-<h2>Facts about cats:</h2>
-<div *ngFor="let fact of facts">
-  <p>{{fact.fact}}</p>
+<div class="container">
+    <h2>Facts about cats:</h2>
+    <div *ngIf="facts.length != 3; else ReadyFacts">
+        <img alt="cute kitten" src="../../assets/kitten.jpg">
+        <p>Please wait</p>
+    </div>
+    <ng-template #ReadyFacts>
+        <div *ngFor="let fact of facts">
+            <p>{{fact.fact}}</p>
+        </div>
+    </ng-template>
 </div>
+
